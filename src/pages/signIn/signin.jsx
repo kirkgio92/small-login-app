@@ -3,13 +3,11 @@ import { useState } from "react";
 import { signIn } from "next-auth/react";
 import styles from "./index.module.scss";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export default function SignIn() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -56,7 +54,7 @@ export default function SignIn() {
         </button>
       </form>
       <p className={styles.redirect}>
-        Don't have an account? <Link href="/signUp">Sign up</Link>
+        Don&apos;t have an account? <Link href="/signUp">Sign Up</Link>
       </p>
     </div>
   );
