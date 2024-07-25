@@ -1,0 +1,33 @@
+.UserCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #564e58;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+
+  .infoWrapper {
+    display: flex;
+    gap: 24px;
+    margin-top: 12px;
+
+    .userInfo {
+      text-align: left;
+      background-color: #388697;
+      border-radius: 4px;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+      padding: 8px;
+
+      p {
+        font-size: 1.1rem;
+
+        span {
+          font-weight: 500;
+          color: #191516;
+        }
+      }
+    }
+  }
+}
