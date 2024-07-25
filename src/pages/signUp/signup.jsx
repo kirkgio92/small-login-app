@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from "./index.module.scss";
+import Link from "next/link";
 
 export default function SignUp() {
   const [username, setUsername] = useState("");
@@ -80,7 +81,7 @@ export default function SignUp() {
         </button>
       </form>
       <p className={styles.redirect}>
-        Already have an account? <a href="/signIn">Sign in</a>
+        Already have an account? <Link href="/signIn">Sign In</Link>
       </p>
     </div>
   );
